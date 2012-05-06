@@ -714,7 +714,7 @@ function s:GetFileTypeSettings(ft)
 	let b:ECcommentClose =
 		    \ substitute(&commentstring, '.*%s', "", "")
     " Multipart comments:
-    elseif fileType =~ '^\(c\|b\|css\|csc\|cupl\|indent\|jam\|lex\|lifelines\|'.
+    elseif fileType =~ '^\(c\|b\|css\|stylus\|less\|csc\|cupl\|indent\|jam\|lex\|lifelines\|'.
 		\ 'lite\|nqc\|phtml\|progress\|rexx\|rpl\|sas\|sdl\|sl\|'.
 		\ 'strace\|xpm\|yacc\)$'
 	let b:ECcommentOpen = '/*'
@@ -755,7 +755,7 @@ function s:GetFileTypeSettings(ft)
 	let b:ECcommentClose = '"'
     " Singlepart comments:
     elseif fileType =~ '^\(ox\|cpp\|php\|java\|verilog\|acedb\|ch\|clean\|'.
-		\ 'clipper\|cs\|dot\|dylan\|hercules\|idl\|ishd\|javascript\|'.
+		\ 'clipper\|cs\|dot\|dylan\|hercules\|idl\|ishd\|javascript\|jade\|'.
 		\ 'kscript\|mel\|named\|openroad\|pccts\|pfmain\|pike\|'.
 		\ 'pilrc\|plm\|pov\|rc\|scilab\|specman\|tads\|tsalt\|uc\|'.
 		\ 'xkb\)$'
